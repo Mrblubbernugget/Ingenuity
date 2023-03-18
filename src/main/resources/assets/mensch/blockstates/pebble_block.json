@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mensch:block/pebble_block"
+    },
+    "facing=south": {
+      "model": "mensch:block/pebble_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mensch:block/pebble_block",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "mensch:block/pebble_block",
+      "y": 90
+    }
+  }
+}
