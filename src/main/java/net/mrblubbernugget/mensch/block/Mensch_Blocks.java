@@ -14,7 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.mrblubbernugget.mensch.Mensch;
 import net.mrblubbernugget.mensch.block.custom.PebbleBlock;
 import net.mrblubbernugget.mensch.item.MenschCreativeModeTab;
-import net.mrblubbernugget.mensch.item.Mensch_Items;
+import net.mrblubbernugget.mensch.item.MenschItems;
 
 import java.util.function.Supplier;
 
@@ -39,7 +39,7 @@ public class Mensch_Blocks {
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, Supplier<T> block, CreativeModeTab tab) {
 
-        return Mensch_Items.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+        return MenschItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
     }
 
     public static void register(IEventBus eventBus) {

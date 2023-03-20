@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "mensch:block/pebble_block",
 		"1": "mensch:block/pebble_block_voxelshape_transparant",
-		"particle": "mensch:block/pebble_block"
+		"particle": "block/stone"
 	},
 	"elements": [
 		{

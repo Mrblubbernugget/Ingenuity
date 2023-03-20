@@ -1,17 +1,14 @@
 package net.mrblubbernugget.mensch;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mrblubbernugget.mensch.block.Mensch_Blocks;
-import net.mrblubbernugget.mensch.item.Mensch_Items;
+import net.mrblubbernugget.mensch.entity.MenschEntities;
+import net.mrblubbernugget.mensch.item.MenschItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -25,8 +22,9 @@ public class Mensch {
     public Mensch() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        Mensch_Items.register(modEventBus);
+        MenschItems.register(modEventBus);
         Mensch_Blocks.register(modEventBus);
+        MenschEntities.MENSCH_ENTITY_TYPES.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -35,13 +33,5 @@ public class Mensch {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
 
-    }
-
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
-    public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-
-        }
     }
 }

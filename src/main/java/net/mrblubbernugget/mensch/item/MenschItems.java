@@ -6,8 +6,9 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrblubbernugget.mensch.Mensch;
+import net.mrblubbernugget.mensch.item.custom.PebbleItem;
 
-public class Mensch_Items {
+public class MenschItems {
 
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Mensch.MOD_ID);
@@ -19,8 +20,8 @@ public class Mensch_Items {
     //Items
 
     public static final RegistryObject<Item> PEBBLE = ITEMS.register("pebble",
-            () -> new Item(new Item.Properties()
-                    .stacksTo(8)
+            () -> new PebbleItem(new Item.Properties()
+                    .stacksTo(16)
                     .tab(MenschCreativeModeTab.MENSCH_TAB)));
 
     public static final RegistryObject<Item> BRANCH = ITEMS.register("branch",
