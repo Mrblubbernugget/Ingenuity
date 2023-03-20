@@ -27,9 +27,8 @@ public class PebbleBlock extends HorizontalDirectionalBlock {
         super(properties);
     }
 
+    //Hitbox
     private static final VoxelShape SHAPE = Block.box(5.5, 0, 5.5, 10.5, 2, 10.5);
-
-
 
     @Override
     public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
