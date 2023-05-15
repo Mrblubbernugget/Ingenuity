@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"render_type": "cutout",
 	"textures": {
-		"0": "mensch:block/pebble_block",
-		"1": "mensch:block/pebble_block_voxelshape_transparant",
+		"0": "ingenuity:block/pebble_block",
+		"1": "ingenuity:block/pebble_block_voxelshape_transparant",
 		"particle": "block/stone"
 	},
 	"elements": [

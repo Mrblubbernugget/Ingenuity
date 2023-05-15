@@ -1,4 +1,4 @@
-package net.mrblubbernugget.mensch.entity.projectile;
+package net.mrblubbernugget.ingenuity.entity.projectile;
 
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleOptions;
@@ -15,28 +15,24 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraftforge.network.NetworkHooks;
-import net.mrblubbernugget.mensch.entity.MenschEntities;
-import net.mrblubbernugget.mensch.item.MenschItems;
+import net.mrblubbernugget.ingenuity.entity.IngenuityEntities;
+import net.mrblubbernugget.ingenuity.item.IngenuityItems;
 
 public class PebbleProjectile extends ThrowableItemProjectile {
-
-
     public PebbleProjectile(EntityType<? extends PebbleProjectile> entityType, Level level) {
         super(entityType, level);
     }
 
     public PebbleProjectile(Level level, LivingEntity shooter) {
-        super(MenschEntities.PEBBLE_ENTITY.get(), level);
+        super(IngenuityEntities.PEBBLE_ENTITY.get(), level);
     }
 
-    public PebbleProjectile(Level level, double x, double y, double z) {
-        super(MenschEntities.PEBBLE_ENTITY.get(), x, y, z, level);
-    }
-
+    //returning the item texture for the renderer
     protected Item getDefaultItem() {
-        return MenschItems.PEBBLE.get();
+        return IngenuityItems.PEBBLE.get();
     }
 
+    //particle effect on hit method
     private ParticleOptions getParticle() {
         ItemStack itemstack = this.getItemRaw();
         return (ParticleOptions)(itemstack.isEmpty() ? ParticleTypes.CRIT : new ItemParticleOption(ParticleTypes.ITEM, itemstack));

@@ -1,4 +1,4 @@
-package net.mrblubbernugget.mensch.item.custom;
+package net.mrblubbernugget.ingenuity.item.custom;
 
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -6,11 +6,10 @@ import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
-
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.mrblubbernugget.mensch.entity.projectile.PebbleProjectile;
+import net.mrblubbernugget.ingenuity.entity.projectile.PebbleProjectile;
 
 public class PebbleItem extends Item {
     public PebbleItem(Item.Properties pProperties) {

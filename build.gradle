@@ -6,8 +6,8 @@ plugins {
 }
 
 version = '0.0.1-1.19'
-group = 'net.mrblubbernugget.mensch' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'mensch'
+group = 'net.mrblubbernugget.ingenuity' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'ingenuity'
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -149,12 +149,12 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "mensch",
-                "Specification-Vendor"    : "menschsareus",
+                "Specification-Title"     : "ingenuity",
+                "Specification-Vendor"    : "ingenuities",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
-                "Implementation-Vendor"   : "menschsareus",
+                "Implementation-Vendor"   : "ingenuities",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }

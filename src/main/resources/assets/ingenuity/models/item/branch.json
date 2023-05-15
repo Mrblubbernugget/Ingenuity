@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mensch:item/pebble"
+    "layer0": "ingenuity:item/branch"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ingenuity:block/pebble_block"
+    },
+    "facing=south": {
+      "model": "ingenuity:block/pebble_block2",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ingenuity:block/pebble_block",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "ingenuity:block/pebble_block",
+      "y": 90
+    }
+  }
+}
