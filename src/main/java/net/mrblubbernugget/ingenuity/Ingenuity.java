@@ -18,7 +18,6 @@ import org.slf4j.Logger;
 @Mod(Ingenuity.MODID)
 public class Ingenuity
 {
-    private int test = 1;
     // Define mod id in a common place for everything to reference
     public static final String MODID = "ingenuity";
     // Directly reference a slf4j logger
